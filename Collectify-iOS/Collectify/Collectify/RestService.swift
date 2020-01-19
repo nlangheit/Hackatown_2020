@@ -9,21 +9,35 @@
 import Foundation
 
 class RestService {
-    
     func getGarbage() {
+        let session = URLSession.shared
         let url = URL(string: "http://10.200.29.56:5000/garbage")!
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if let error = error {
-                print("error: \(error)")
-            } else {
-                if let response = response as? HTTPURLResponse {
-                    print("statusCode: \(response.statusCode)")
-                }
-                if let data = data, let dataString = String(data: data, encoding: .utf8) {
-                    print("data: \(dataString)")
-                }
+
+        let task = session.dataTask(with: url) { data, response, error in
+
+            if error != nil || data == nil {
+                print("Client error!")
+                return
+            }
+
+            guard let response = response as? HTTPURLResponse, (200...299).contains(response.statusCode) else {
+                print("Server error!")
+                return
+            }
+
+            guard let mime = response.mimeType, mime == "application/json" else {
+                print("Wrong MIME type!")
+                return
+            }
+
+            do {
+                let json = try JSONSerialization.jsonObject(with: data!, options: [])
+                print(json)
+            } catch {
+                print("JSON error: \(error.localizedDescription)")
             }
         }
+
         task.resume()
     }
 }

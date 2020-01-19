@@ -1,0 +1,6 @@
+framework module Pods_Collectify_CollectifyUITests {
+  umbrella header "Pods-Collectify-CollectifyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
