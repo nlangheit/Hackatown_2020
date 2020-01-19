@@ -1,5 +1,7 @@
 {
   "name": "collectify",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
