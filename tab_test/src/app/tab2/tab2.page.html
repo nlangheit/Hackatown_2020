@@ -2,14 +2,19 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-title>
-      Ionic Image Upload
+      Image Upload
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-button (click)="openCam()" >Open Camera</ion-button>
-  <img *ngFor="let image of images" src="{{image}}">
+  <img [src]="image">
 </ion-content>
+
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button (click)="takePicture()">
+    <ion-icon ios="ios-camera" md="md-camera"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
 
 

@@ -1,22 +1,11 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      Map
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
-  <ion-card *ngFor="let garbage  of garbages">
-    <img src="{{garbage.image_url}}" />
-    <ion-card-header>
-      <ion-card-subtitle>{{garbage.date}}</ion-card-subtitle>
-      <ion-card-title>{{garbage.location_name}}</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      Latitude: {{garbage.latitude}}  Longitude: {{garbage.longitude}}
-    </ion-card-content>
-  </ion-card>
-
+  <ion-img src="https://image.cnbcfm.com/api/v1/image/105872339-1556205999017google-dots-tracking.jpg?v=1556206054&w=740&h=416"></ion-img>
 </ion-content>
