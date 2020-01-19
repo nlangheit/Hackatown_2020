@@ -21,8 +21,8 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     StatusBar,
     SplashScreen,
       RestService,
-      GoogleMaps,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    GoogleMaps
   ],
   bootstrap: [AppComponent]
 })
