@@ -5,13 +5,13 @@ import botocore
 class S3Manager():
     def __init__(self):
         self.BUCKET_NAME = 'polylog'
-        self.s3 = boto3.resource('s3')
-        self.s3_client = boto3.client(
-            's3',
+        self.session = boto3.Session(
             aws_access_key_id='ASIAWDSRHSOT6XMS4S5F',
             aws_secret_access_key = 'bkL/4wn60AT2pcpVsuw+xOyY3k9lRWjap2PdONTq',
             aws_session_token = 'FwoGZXIvYXdzEFMaDKUz1HsLmYPH4zM3jyLQAUqSNszsryVe1mOdyMVo+/54FRKx1QZc8QYXCV13j27bqZjIsGUvfAf/mavX80+aKyvHLpAxC1hGfJolJ4bc1uzN97hzXoKFRZ497+9VsB9WeAGNx5H3dpH9gxSA151kIfKabiZpe2XzSMKteJGawXrpILRcd7JfplcefRXiu0re+Mkv7d05e/L6YLZAhIXkZjvfZIAhq81oKXxROm6EJLpX/a3uNLKgIqF+tzK5wNEVuXXYY7rWswBGeED9/rhhjWG9xu2gE667hXWoOzqY6gQoot6O8QUyLVUf/cegvHStwrDigxKFWAjbWuiE3LcvTZhnJYZ7T2ZqhxLI7JxmFlv0JHqo2w=='
         )
+        self.s3 = self.session.resource('s3')
+        self.s3_client = self.session.client('s3')
 
 
     # Download file from s3
@@ -64,7 +64,7 @@ KEY =  'hackatown2020/images/example.jpg' # replace with your object key
 local = 'test.txt'
 
 s3 = S3Manager()
-# s3.download(KEY, ".")
+s3.download(KEY, ".")
 # s3.upload(local, 'hackatown2020')
 # print(s3.listBucketObjects())
 print(s3.containsKey('hackatown2020/images/example.jpg'))
