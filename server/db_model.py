@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, Column, Integer, String, Sequence, engine
+from sqlalchemy import create_engine, Column, Integer, String, Sequence, engine, Date
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, Session
 
@@ -23,7 +23,7 @@ class GarbageLocation(Base):
     location_name = Column(String)
     latitude = Column(Integer)
     longitude = Column(Integer)
-    date = Column(String)
+    date = Column(Date)
     image_url = Column(String)
     pollution_level = Column(Integer)
 
