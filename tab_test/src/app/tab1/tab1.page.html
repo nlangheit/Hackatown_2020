@@ -7,14 +7,45 @@
 </ion-header>
 
 <ion-content>
-  <ion-card *ngFor="let garbage  of garbages">
-    <img src="{{garbage.image_url}}" />
-    <ion-card-header>
-      <ion-card-subtitle>{{garbage.date}}</ion-card-subtitle>
-      <ion-card-title>{{garbage.location_name}}</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      Latitude: {{garbage.latitude}}  Longitude: {{garbage.longitude}}
-    </ion-card-content>
-  </ion-card>
+<!--  <ion-card *ngFor="let garbage  of garbages">-->
+<!--    <img src="{{garbage.image_url}}" />-->
+<!--    <ion-card-header>-->
+<!--      <ion-card-subtitle>{{garbage.date}}</ion-card-subtitle>-->
+<!--      <ion-card-title>{{garbage.location_name}}</ion-card-title>-->
+<!--    </ion-card-header>-->
+<!--    <ion-card-content>-->
+<!--      Latitude: {{garbage.latitude}}  Longitude: {{garbage.longitude}}-->
+<!--    </ion-card-content>-->
+<!--  </ion-card>-->
+
+
+  <ion-grid>
+
+  <ion-row *ngFor="let garbage of garbages">
+    <ion-col size="2">
+      <ion-thumbnail item-start>
+        <img [src]="garbage.image_url">
+      </ion-thumbnail>
+    </ion-col>
+    <ion-col>
+      <ion-row>
+        <ion-col style="padding-bottom: 0; margin-top: 0"><div style="font-weight: 600; font-size: 0.8em">{{ garbage.location_name }}</div></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col style="padding-bottom: 0"><div style="font-weight: 300; font-size: 0.6em">Degré: {{garbage.pollution_level}}, Latitude: {{garbage.latitude}}  Longitude: {{garbage.longitude}}</div></ion-col>
+      </ion-row>
+<!--      <ion-row>-->
+<!--        <ion-col style="padding-bottom: 0"><div style="font-weight: 300; font-size: 0.5em"></div></ion-col>-->
+<!--      </ion-row>-->
+<!--      <ion-row>-->
+<!--        <ion-col>-->
+<!--          <div style="display: inline">-->
+<!--            <div style="display: inline; font-size: 0.7em; padding: 4px 8px; margin-right: 5px; color: white; border-radius: 14px;">Latitude: {{garbage.latitude}}  Longitude: {{garbage.longitude}}</div>-->
+<!--          </div>-->
+<!--        </ion-col>-->
+<!--      </ion-row>-->
+    </ion-col>
+
+  </ion-row>
+  </ion-grid>
 </ion-content>
