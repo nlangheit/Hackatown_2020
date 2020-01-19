@@ -4,3 +4,4 @@ flask
 pg8000
 boto3
 botocore
+flask_cors

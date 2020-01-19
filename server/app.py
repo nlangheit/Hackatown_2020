@@ -3,7 +3,7 @@ from flask_cors import CORS
 from flask import Flask, request, Response
 from sqlalchemy.orm import Session
 
-from db_model import DatabaseModel, GarbageLocation
+from db_model import DatabaseModel
 from garbage_location_service import GarbageLocationService
 
 app = Flask(__name__)
