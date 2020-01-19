@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Collectify' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Collectify
+  pod "Alamofire"
+  pod 'SDWebImageSwiftUI'
+  
+  target 'CollectifyTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'CollectifyUITests' do
+    # Pods for testing
+  end
+
+end

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,14 @@
 		20E1A35323D48C7B001D6FA6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A35223D48C7B001D6FA6 /* LocationManager.swift */; };
 		20E1A35523D48E8D001D6FA6 /* RestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A35423D48E8D001D6FA6 /* RestService.swift */; };
 		20E1A35923D4905D001D6FA6 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A35823D4905D001D6FA6 /* EventListView.swift */; };
+		20E1A35B23D49391001D6FA6 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A35A23D49391001D6FA6 /* CameraView.swift */; };
+		20E1A35D23D496AA001D6FA6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A35C23D496AA001D6FA6 /* ImagePicker.swift */; };
+		20E1A35F23D49AA7001D6FA6 /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A35E23D49AA7001D6FA6 /* PhotoCaptureView.swift */; };
+		20E1A36323D4AB57001D6FA6 /* GarbageEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A36223D4AB57001D6FA6 /* GarbageEventModel.swift */; };
+		20E1A36523D4AC06001D6FA6 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A36423D4AC06001D6FA6 /* Observer.swift */; };
+		80D94894FEB1071AA51A3BA6 /* Pods_Collectify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F624B4555420AC7E4290BE35 /* Pods_Collectify.framework */; };
+		B917342723BDE020D09D4174 /* Pods_Collectify_CollectifyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC782457C6617779B6DBA10A /* Pods_Collectify_CollectifyUITests.framework */; };
+		F70C5699F49C7B73AC6DDD6C /* Pods_CollectifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6510E6144A7A3995BDCAE653 /* Pods_CollectifyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +67,20 @@
 		20E1A35223D48C7B001D6FA6 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		20E1A35423D48E8D001D6FA6 /* RestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestService.swift; sourceTree = "<group>"; };
 		20E1A35823D4905D001D6FA6 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
+		20E1A35A23D49391001D6FA6 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		20E1A35C23D496AA001D6FA6 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		20E1A35E23D49AA7001D6FA6 /* PhotoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureView.swift; sourceTree = "<group>"; };
+		20E1A36223D4AB57001D6FA6 /* GarbageEventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GarbageEventModel.swift; sourceTree = "<group>"; };
+		20E1A36423D4AC06001D6FA6 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		41A50FB50940FC9BA95849B6 /* Pods-Collectify-CollectifyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collectify-CollectifyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Collectify-CollectifyUITests/Pods-Collectify-CollectifyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		44D8B1663C693FDA400A87AC /* Pods-CollectifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectifyTests.debug.xcconfig"; path = "Target Support Files/Pods-CollectifyTests/Pods-CollectifyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6510E6144A7A3995BDCAE653 /* Pods_CollectifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollectifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A42C1C3BEF32F9F74F6C517 /* Pods-Collectify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collectify.release.xcconfig"; path = "Target Support Files/Pods-Collectify/Pods-Collectify.release.xcconfig"; sourceTree = "<group>"; };
+		6B2570FC3C000CD247CC9005 /* Pods-Collectify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collectify.debug.xcconfig"; path = "Target Support Files/Pods-Collectify/Pods-Collectify.debug.xcconfig"; sourceTree = "<group>"; };
+		A02F07D1913233A659C3B575 /* Pods-Collectify-CollectifyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collectify-CollectifyUITests.release.xcconfig"; path = "Target Support Files/Pods-Collectify-CollectifyUITests/Pods-Collectify-CollectifyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D8EFFC6544746FCFE859C888 /* Pods-CollectifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectifyTests.release.xcconfig"; path = "Target Support Files/Pods-CollectifyTests/Pods-CollectifyTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC782457C6617779B6DBA10A /* Pods_Collectify_CollectifyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Collectify_CollectifyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F624B4555420AC7E4290BE35 /* Pods_Collectify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Collectify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D94894FEB1071AA51A3BA6 /* Pods_Collectify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F70C5699F49C7B73AC6DDD6C /* Pods_CollectifyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B917342723BDE020D09D4174 /* Pods_Collectify_CollectifyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +119,8 @@
 				20E1A33623D48893001D6FA6 /* CollectifyTests */,
 				20E1A34123D48893001D6FA6 /* CollectifyUITests */,
 				20E1A31B23D48892001D6FA6 /* Products */,
+				EBAAA81E2616B04FBE7889ED /* Pods */,
+				7D1C5A2B0CE69021B44357F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,9 +137,14 @@
 		20E1A31C23D48892001D6FA6 /* Collectify */ = {
 			isa = PBXGroup;
 			children = (
+				20E1A36223D4AB57001D6FA6 /* GarbageEventModel.swift */,
+				20E1A36423D4AC06001D6FA6 /* Observer.swift */,
 				20E1A31D23D48892001D6FA6 /* AppDelegate.swift */,
 				20E1A31F23D48892001D6FA6 /* SceneDelegate.swift */,
 				20E1A32423D48892001D6FA6 /* ContentView.swift */,
+				20E1A35A23D49391001D6FA6 /* CameraView.swift */,
+				20E1A35E23D49AA7001D6FA6 /* PhotoCaptureView.swift */,
+				20E1A35C23D496AA001D6FA6 /* ImagePicker.swift */,
 				20E1A35423D48E8D001D6FA6 /* RestService.swift */,
 				20E1A35223D48C7B001D6FA6 /* LocationManager.swift */,
 				20E1A32623D48893001D6FA6 /* Assets.xcassets */,
@@ -151,6 +183,29 @@
 			path = CollectifyUITests;
 			sourceTree = "<group>";
 		};
+		7D1C5A2B0CE69021B44357F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F624B4555420AC7E4290BE35 /* Pods_Collectify.framework */,
+				EC782457C6617779B6DBA10A /* Pods_Collectify_CollectifyUITests.framework */,
+				6510E6144A7A3995BDCAE653 /* Pods_CollectifyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBAAA81E2616B04FBE7889ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B2570FC3C000CD247CC9005 /* Pods-Collectify.debug.xcconfig */,
+				6A42C1C3BEF32F9F74F6C517 /* Pods-Collectify.release.xcconfig */,
+				41A50FB50940FC9BA95849B6 /* Pods-Collectify-CollectifyUITests.debug.xcconfig */,
+				A02F07D1913233A659C3B575 /* Pods-Collectify-CollectifyUITests.release.xcconfig */,
+				44D8B1663C693FDA400A87AC /* Pods-CollectifyTests.debug.xcconfig */,
+				D8EFFC6544746FCFE859C888 /* Pods-CollectifyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20E1A34723D48893001D6FA6 /* Build configuration list for PBXNativeTarget "Collectify" */;
 			buildPhases = (
+				C52C5CE2B73BA262EC4C5444 /* [CP] Check Pods Manifest.lock */,
 				20E1A31623D48892001D6FA6 /* Sources */,
 				20E1A31723D48892001D6FA6 /* Frameworks */,
 				20E1A31823D48892001D6FA6 /* Resources */,
+				DA445AA6D792FCFB93D2881F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,6 +232,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20E1A34A23D48893001D6FA6 /* Build configuration list for PBXNativeTarget "CollectifyTests" */;
 			buildPhases = (
+				6CC5DD131A76B122EFEE1EC7 /* [CP] Check Pods Manifest.lock */,
 				20E1A32F23D48893001D6FA6 /* Sources */,
 				20E1A33023D48893001D6FA6 /* Frameworks */,
 				20E1A33123D48893001D6FA6 /* Resources */,
@@ -193,9 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20E1A34D23D48893001D6FA6 /* Build configuration list for PBXNativeTarget "CollectifyUITests" */;
 			buildPhases = (
+				47F672B3BC920A879EF21A47 /* [CP] Check Pods Manifest.lock */,
 				20E1A33A23D48893001D6FA6 /* Sources */,
 				20E1A33B23D48893001D6FA6 /* Frameworks */,
 				20E1A33C23D48893001D6FA6 /* Resources */,
+				CAC1905C1209E9946346A9E7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -277,17 +337,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		47F672B3BC920A879EF21A47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Collectify-CollectifyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CC5DD131A76B122EFEE1EC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CollectifyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C52C5CE2B73BA262EC4C5444 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Collectify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAC1905C1209E9946346A9E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Collectify-CollectifyUITests/Pods-Collectify-CollectifyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Collectify-CollectifyUITests/Pods-Collectify-CollectifyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Collectify-CollectifyUITests/Pods-Collectify-CollectifyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA445AA6D792FCFB93D2881F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Collectify/Pods-Collectify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Collectify/Pods-Collectify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Collectify/Pods-Collectify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		20E1A31623D48892001D6FA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20E1A36523D4AC06001D6FA6 /* Observer.swift in Sources */,
 				20E1A32323D48892001D6FA6 /* Collectify.xcdatamodeld in Sources */,
 				20E1A35523D48E8D001D6FA6 /* RestService.swift in Sources */,
+				20E1A36323D4AB57001D6FA6 /* GarbageEventModel.swift in Sources */,
 				20E1A31E23D48892001D6FA6 /* AppDelegate.swift in Sources */,
+				20E1A35B23D49391001D6FA6 /* CameraView.swift in Sources */,
 				20E1A35323D48C7B001D6FA6 /* LocationManager.swift in Sources */,
+				20E1A35F23D49AA7001D6FA6 /* PhotoCaptureView.swift in Sources */,
 				20E1A35123D48990001D6FA6 /* MapView.swift in Sources */,
 				20E1A32523D48892001D6FA6 /* ContentView.swift in Sources */,
+				20E1A35D23D496AA001D6FA6 /* ImagePicker.swift in Sources */,
 				20E1A32023D48892001D6FA6 /* SceneDelegate.swift in Sources */,
 				20E1A35923D4905D001D6FA6 /* EventListView.swift in Sources */,
 			);
@@ -452,10 +620,12 @@
 		};
 		20E1A34823D48893001D6FA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B2570FC3C000CD247CC9005 /* Pods-Collectify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Collectify/Preview Content\"";
+				DEVELOPMENT_TEAM = X692T3M5AJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Collectify/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -471,10 +641,12 @@
 		};
 		20E1A34923D48893001D6FA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A42C1C3BEF32F9F74F6C517 /* Pods-Collectify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Collectify/Preview Content\"";
+				DEVELOPMENT_TEAM = X692T3M5AJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Collectify/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -490,6 +662,7 @@
 		};
 		20E1A34B23D48893001D6FA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44D8B1663C693FDA400A87AC /* Pods-CollectifyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +684,7 @@
 		};
 		20E1A34C23D48893001D6FA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8EFFC6544746FCFE859C888 /* Pods-CollectifyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +706,7 @@
 		};
 		20E1A34E23D48893001D6FA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A50FB50940FC9BA95849B6 /* Pods-Collectify-CollectifyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +726,7 @@
 		};
 		20E1A34F23D48893001D6FA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A02F07D1913233A659C3B575 /* Pods-Collectify-CollectifyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

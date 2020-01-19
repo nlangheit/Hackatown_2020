@@ -1,4 +1,4 @@
-//
+     //
 //  ContentView.swift
 //  Collectify
 //
@@ -29,8 +29,7 @@ struct ContentView: View {
                     }
                 }
                 .tag(0)
-            Text("Second View")
-                .font(.title)
+            CameraView()
                 .tabItem {
                     VStack {
                         Image("second")
