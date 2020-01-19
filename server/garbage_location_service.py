@@ -21,4 +21,3 @@ class GarbageLocationService:
         # storage_service.
         key: str = "hackatown2020/images/example.jpg"
         self.storage_manager.download(key, ".")
-

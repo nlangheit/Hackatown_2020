@@ -6,7 +6,7 @@
 *.idea
 
 # for npm
-*.node_modules
+*node_modules
 *www
 
 # for python
