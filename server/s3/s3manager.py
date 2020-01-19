@@ -7,10 +7,11 @@ class S3Manager:
     def __init__(self):
         self.BUCKET_NAME = 'polylog'
         self.PATH = 'hackatown/images/'
+        self.OBJECT_URL = 'https://polylog.s3.amazonaws.com/'
         self.session = boto3.Session(
-            aws_access_key_id='ASIAWDSRHSOTZ6NTXJCQ',
-            aws_secret_access_key = 'iPZnue+CKc5PSbaPcfqiVkIaZ8IAT4bzHKAnfMWk',
-            aws_session_token = 'FwoGZXIvYXdzEFYaDNDvRp45NxYqobk0hSLQARk4fu5roK4KcAzUOdADCe4jvbX9HEUhglWHQwvdQ9S3aWrdk0Kmp44oeYhflxlHGbwNkA4CT8U27L7ogLvf3/nzYP/9p5sMP4vA3hcdunirONiEXSgIxYySzvdwCHOEik39Ob0QWtCifx5q9PZJLwIoItVSPp2Un9M+NM4XrselADxvEIncGdw8RwqZAWOvets/8e5yNLknWZCycUBk7YMxtpY52t1oPL9kkaCfCp9eZ1NlKlA1zcxvIk7U3GB5zLLL3yASXv7RYxUw5e641cIo8ruP8QUyLbnQ9TAdMasCgallw6sQ4oupkR3dsynihgAPcJFshw8Kw25U+t25CLDqNFI0qA=='
+            aws_access_key_id='ASIAWDSRHSOT3XI5UHVT',
+            aws_secret_access_key = 'rFag3lPJW9pYqHZ6BuJ76iEy26EoxenwTF7F4fMc',
+            aws_session_token = 'FwoGZXIvYXdzEFkaDBY61H40GGmSJM5w2SLQAQsUTy3ETE8xKW82zQeRxt8gZUgwCn6m1xd8J332yVvCTr8tOEGNmrVPfA38QhfEimKPM0UZqvRceEADC5QuOAzF/6prKVnyOAWeqk1omvq4QqIYmW6iJk2b+ziEF70kPzhNwgV1pSvbkb/4tlcifhc0Qyb5Oop6yPK/58D0ZpouCAckkCIA6lYTy5O6BwkyrJfM6o9VxX5XwZO1wOrEOi8W/JeCGuZwVItwW7o4o+LrDkaHndEEIcY9ocMOT9o8Xk+XExsNi0LHP4CHK8pzMAgoq4+Q8QUyLRdKHSTc5xNAXZy6kj5UvsIxCbvUG+EcqR+XAMRCy4xnkegaUdWx13M8OvLaIQ=='
         )
         self.s3 = self.session.resource('s3')
         self.s3_client = self.session.client('s3')
@@ -40,7 +41,7 @@ class S3Manager:
             # self.s3.Bucket(self.BUCKET_NAME).upload_file(source_file, s3_path)
             self.s3_client.put_object(Bucket=self.BUCKET_NAME, Key=s3_path, Body=file_content)
 
-            return 'https://polylog.s3.amazonaws.com/' + s3_path
+            return self.OBJECT_URL + s3_path
             # return 'https://polylog.s3.amazonaws.com/' +s3_path
         except Exception as e:
             print(e)
@@ -55,7 +56,7 @@ class S3Manager:
         if response['KeyCount'] > 0:
             keys = []
             for file in response['Contents']:
-                keys.append(file['Key'])
+                keys.append(self.OBJECT_URL + file['Key'])
             return keys
 
         return None
@@ -74,3 +75,4 @@ class S3Manager:
 # s3.upload('dylan.jpg')
 # s3.download(KEY, ".")
 # print(s3.containsKey('hackatown2020/images/example.jpg'))
+# print(s3.listBucketObjects())
