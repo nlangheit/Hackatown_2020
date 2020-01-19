@@ -7,7 +7,5 @@ services:
       - "5000:5000"
     build:
       context: .
-    volumes:
-      - ./data/:/usr/src/app/data
     restart: on-failure:3
 

@@ -34,10 +34,14 @@ class S3Manager:
 
     # Upload file to s3
     # object_key: path on s3 after bucket name
-    def upload(self, source_file):
-        s3_path = self.PATH + uuid.uuid1().hex
+    def upload(self, file_content, extension: str):
+        s3_path = self.PATH + uuid.uuid1().hex + extension
         try:
-            self.s3.Bucket(self.BUCKET_NAME).upload_file(source_file, s3_path)
+            # self.s3.Bucket(self.BUCKET_NAME).upload_file(source_file, s3_path)
+            self.s3_client.put_object(Bucket=self.BUCKET_NAME, Key=s3_path, Body=file_content)
+
+            return 'https://polylog.s3.amazonaws.com/' + s3_path
+            # return 'https://polylog.s3.amazonaws.com/' +s3_path
         except Exception as e:
             print(e)
 
