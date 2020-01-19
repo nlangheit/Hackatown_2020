@@ -11,6 +11,6 @@ export class RestService {
   }
 
   public test(): Subscribable<any>  {
-    return this.http.get('http://10.200.29.56:5000/garbage');
+    return this.http.get('http://10.200.0.234:5000/garbage');
   }
 }

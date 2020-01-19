@@ -1,11 +1,15 @@
+
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab Two
+      Ionic Image Upload
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div #map style="height:100%;"></div>
+<ion-content padding>
+  <ion-button (click)="openCam()" >Open Camera</ion-button>
+  <img *ngFor="let image of images" src="{{image}}">
 </ion-content>
+
+
