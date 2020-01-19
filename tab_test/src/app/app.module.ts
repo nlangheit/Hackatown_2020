@@ -10,7 +10,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {RestService} from './rest.service';
 import {HttpClientModule} from '@angular/common/http';
-import { GoogleMaps } from '@ionic-native/google-maps';
 
 
 @NgModule({
@@ -21,7 +20,6 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     StatusBar,
     SplashScreen,
       RestService,
-      GoogleMaps,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
