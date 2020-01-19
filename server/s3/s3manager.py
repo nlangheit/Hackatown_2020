@@ -1,14 +1,16 @@
 import boto3
 import botocore
+import uuid
 
 
 class S3Manager:
     def __init__(self):
         self.BUCKET_NAME = 'polylog'
+        self.PATH = 'hackatown/images/'
         self.session = boto3.Session(
-            aws_access_key_id='ASIAWDSRHSOT6XMS4S5F',
-            aws_secret_access_key = 'bkL/4wn60AT2pcpVsuw+xOyY3k9lRWjap2PdONTq',
-            aws_session_token = 'FwoGZXIvYXdzEFMaDKUz1HsLmYPH4zM3jyLQAUqSNszsryVe1mOdyMVo+/54FRKx1QZc8QYXCV13j27bqZjIsGUvfAf/mavX80+aKyvHLpAxC1hGfJolJ4bc1uzN97hzXoKFRZ497+9VsB9WeAGNx5H3dpH9gxSA151kIfKabiZpe2XzSMKteJGawXrpILRcd7JfplcefRXiu0re+Mkv7d05e/L6YLZAhIXkZjvfZIAhq81oKXxROm6EJLpX/a3uNLKgIqF+tzK5wNEVuXXYY7rWswBGeED9/rhhjWG9xu2gE667hXWoOzqY6gQoot6O8QUyLVUf/cegvHStwrDigxKFWAjbWuiE3LcvTZhnJYZ7T2ZqhxLI7JxmFlv0JHqo2w=='
+            aws_access_key_id='ASIAWDSRHSOTZ6NTXJCQ',
+            aws_secret_access_key = 'iPZnue+CKc5PSbaPcfqiVkIaZ8IAT4bzHKAnfMWk',
+            aws_session_token = 'FwoGZXIvYXdzEFYaDNDvRp45NxYqobk0hSLQARk4fu5roK4KcAzUOdADCe4jvbX9HEUhglWHQwvdQ9S3aWrdk0Kmp44oeYhflxlHGbwNkA4CT8U27L7ogLvf3/nzYP/9p5sMP4vA3hcdunirONiEXSgIxYySzvdwCHOEik39Ob0QWtCifx5q9PZJLwIoItVSPp2Un9M+NM4XrselADxvEIncGdw8RwqZAWOvets/8e5yNLknWZCycUBk7YMxtpY52t1oPL9kkaCfCp9eZ1NlKlA1zcxvIk7U3GB5zLLL3yASXv7RYxUw5e641cIo8ruP8QUyLbnQ9TAdMasCgallw6sQ4oupkR3dsynihgAPcJFshw8Kw25U+t25CLDqNFI0qA=='
         )
         self.s3 = self.session.resource('s3')
         self.s3_client = self.session.client('s3')
@@ -32,8 +34,8 @@ class S3Manager:
 
     # Upload file to s3
     # object_key: path on s3 after bucket name
-    def upload(self, source_file, s3_path):
-        s3_path = s3_path + '/' + source_file
+    def upload(self, source_file):
+        s3_path = self.PATH + uuid.uuid1().hex
         try:
             self.s3.Bucket(self.BUCKET_NAME).upload_file(source_file, s3_path)
         except Exception as e:
@@ -65,5 +67,6 @@ class S3Manager:
 # local = 'test.txt'
 #
 # s3 = S3Manager()
+# s3.upload('dylan.jpg')
 # s3.download(KEY, ".")
 # print(s3.containsKey('hackatown2020/images/example.jpg'))
