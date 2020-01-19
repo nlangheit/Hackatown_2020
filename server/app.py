@@ -1,12 +1,14 @@
 from typing import List
 
 from flask import Flask, request
+from flask_cors import CORS
 from sqlalchemy.orm import Session
 
 from db_model import DatabaseModel, GarbageLocation
 from garbage_location_service import GarbageLocationService
 
 app = Flask(__name__)
+CORS(app)
 
 model: DatabaseModel = DatabaseModel()
 session: Session = model.get_session()
