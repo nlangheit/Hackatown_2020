@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab Three
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let garbage  of garbages">
+    <img src="{{garbage.image_url}}" />
+    <ion-card-header>
+      <ion-card-subtitle>{{garbage.date}}</ion-card-subtitle>
+      <ion-card-title>{{garbage.location_name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Latitude: {{garbage.latitude}}  Longitude: {{garbage.longitude}}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
