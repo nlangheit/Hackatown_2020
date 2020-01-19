@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, Column, Integer, String, Sequence, engine
+from sqlalchemy import create_engine, Column, Integer, String, Sequence, engine, Date
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, Session
 
@@ -16,28 +16,17 @@ class DatabaseModel:
         return self.Session()
 
 
-class GarbageRemovalEvent(Base):
-    __tablename__ = 'garbage_removal_event'
+class GarbageLocation(Base):
+    __tablename__ = 'garbage_location'
 
-    id = Column(Integer, Sequence('garbage_removal_event_seq'), primary_key=True)
+    id = Column(Integer, Sequence('garbage_location_seq'), primary_key=True)
     location_name = Column(String)
     latitude = Column(Integer)
     longitude = Column(Integer)
-    date = Column(String)
+    date = Column(Date)
     image_url = Column(String)
     pollution_level = Column(Integer)
 
     def as_dict(self):
         return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
-    # def __repr__(self) -> str:
-    #     return (
-    #         "location_name: {}, "
-    #         "latitude: {}, "
-    #         "longitude: {}, "
-    #         "date: {}, "
-    #         "image_url: {}, "
-    #         "pollution_level: {}".format(
-    #             self.location_name, self.latitude, self.longitude, self.date, self.image_url, self.pollution_level
-    #         )
-    #     )
