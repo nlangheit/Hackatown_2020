@@ -1,6 +1,6 @@
-import { IonicModule } from '@ionic/angular';
+import { IonicModule, NavController, Platform } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
-import { NgModule } from '@angular/core';
+import { NgModule, Injectable } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Tab3Page } from './tab3.page';
@@ -14,4 +14,6 @@ import { Tab3Page } from './tab3.page';
   ],
   declarations: [Tab3Page]
 })
-export class Tab3PageModule {}
+export class Tab3PageModule {
+  constructor() {}  
+}

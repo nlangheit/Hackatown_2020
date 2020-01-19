@@ -1,9 +1,17 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      Garbage Events
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-list inset>
+    <ion-item *ngFor="let garb of garbage.garbages">
+      <ion-img src={{garb.image_url}}></ion-img>
+      <h1>{{garb.location_name}}</h1>
+      <p>{{garb.pollution_level}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

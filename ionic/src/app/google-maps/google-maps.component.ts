@@ -12,12 +12,5 @@ export class GoogleMapsComponent implements OnInit {
   ngOnInit() {}
 
   ionViewDidLoad() {
-    this.initMap();
   }
-
-  initMap() {
-    let coords = new google.maps.LatLng(45, 100);
-/*     let mapOptions: google.maps.MapOptions
- */  }
-
 }
