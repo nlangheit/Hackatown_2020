@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20E1A31E23D48892001D6FA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A31D23D48892001D6FA6 /* AppDelegate.swift */; };
+		20E1A32023D48892001D6FA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A31F23D48892001D6FA6 /* SceneDelegate.swift */; };
+		20E1A32323D48892001D6FA6 /* Collectify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A32123D48892001D6FA6 /* Collectify.xcdatamodeld */; };
+		20E1A32523D48892001D6FA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A32423D48892001D6FA6 /* ContentView.swift */; };
+		20E1A32723D48893001D6FA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E1A32623D48893001D6FA6 /* Assets.xcassets */; };
+		20E1A32A23D48893001D6FA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E1A32923D48893001D6FA6 /* Preview Assets.xcassets */; };
+		20E1A32D23D48893001D6FA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20E1A32B23D48893001D6FA6 /* LaunchScreen.storyboard */; };
+		20E1A33823D48893001D6FA6 /* CollectifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A33723D48893001D6FA6 /* CollectifyTests.swift */; };
+		20E1A34323D48893001D6FA6 /* CollectifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A34223D48893001D6FA6 /* CollectifyUITests.swift */; };
+		20E1A35123D48990001D6FA6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A35023D48990001D6FA6 /* MapView.swift */; };
+		20E1A35323D48C7B001D6FA6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A35223D48C7B001D6FA6 /* LocationManager.swift */; };
+		20E1A35523D48E8D001D6FA6 /* RestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A35423D48E8D001D6FA6 /* RestService.swift */; };
+		20E1A35923D4905D001D6FA6 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E1A35823D4905D001D6FA6 /* EventListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20E1A33423D48893001D6FA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20E1A31223D48892001D6FA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20E1A31923D48892001D6FA6;
+			remoteInfo = Collectify;
+		};
+		20E1A33F23D48893001D6FA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20E1A31223D48892001D6FA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20E1A31923D48892001D6FA6;
+			remoteInfo = Collectify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20E1A31A23D48892001D6FA6 /* Collectify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collectify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E1A31D23D48892001D6FA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20E1A31F23D48892001D6FA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		20E1A32223D48892001D6FA6 /* Collectify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Collectify.xcdatamodel; sourceTree = "<group>"; };
+		20E1A32423D48892001D6FA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		20E1A32623D48893001D6FA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20E1A32923D48893001D6FA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		20E1A32C23D48893001D6FA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20E1A32E23D48893001D6FA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20E1A33323D48893001D6FA6 /* CollectifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E1A33723D48893001D6FA6 /* CollectifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectifyTests.swift; sourceTree = "<group>"; };
+		20E1A33923D48893001D6FA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20E1A33E23D48893001D6FA6 /* CollectifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E1A34223D48893001D6FA6 /* CollectifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectifyUITests.swift; sourceTree = "<group>"; };
+		20E1A34423D48893001D6FA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20E1A35023D48990001D6FA6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		20E1A35223D48C7B001D6FA6 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		20E1A35423D48E8D001D6FA6 /* RestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestService.swift; sourceTree = "<group>"; };
+		20E1A35823D4905D001D6FA6 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20E1A31723D48892001D6FA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E1A33023D48893001D6FA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E1A33B23D48893001D6FA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20E1A31123D48892001D6FA6 = {
+			isa = PBXGroup;
+			children = (
+				20E1A35823D4905D001D6FA6 /* EventListView.swift */,
+				20E1A31C23D48892001D6FA6 /* Collectify */,
+				20E1A33623D48893001D6FA6 /* CollectifyTests */,
+				20E1A34123D48893001D6FA6 /* CollectifyUITests */,
+				20E1A31B23D48892001D6FA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20E1A31B23D48892001D6FA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A31A23D48892001D6FA6 /* Collectify.app */,
+				20E1A33323D48893001D6FA6 /* CollectifyTests.xctest */,
+				20E1A33E23D48893001D6FA6 /* CollectifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20E1A31C23D48892001D6FA6 /* Collectify */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A31D23D48892001D6FA6 /* AppDelegate.swift */,
+				20E1A31F23D48892001D6FA6 /* SceneDelegate.swift */,
+				20E1A32423D48892001D6FA6 /* ContentView.swift */,
+				20E1A35423D48E8D001D6FA6 /* RestService.swift */,
+				20E1A35223D48C7B001D6FA6 /* LocationManager.swift */,
+				20E1A32623D48893001D6FA6 /* Assets.xcassets */,
+				20E1A32B23D48893001D6FA6 /* LaunchScreen.storyboard */,
+				20E1A32E23D48893001D6FA6 /* Info.plist */,
+				20E1A32123D48892001D6FA6 /* Collectify.xcdatamodeld */,
+				20E1A32823D48893001D6FA6 /* Preview Content */,
+				20E1A35023D48990001D6FA6 /* MapView.swift */,
+			);
+			path = Collectify;
+			sourceTree = "<group>";
+		};
+		20E1A32823D48893001D6FA6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A32923D48893001D6FA6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		20E1A33623D48893001D6FA6 /* CollectifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A33723D48893001D6FA6 /* CollectifyTests.swift */,
+				20E1A33923D48893001D6FA6 /* Info.plist */,
+			);
+			path = CollectifyTests;
+			sourceTree = "<group>";
+		};
+		20E1A34123D48893001D6FA6 /* CollectifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20E1A34223D48893001D6FA6 /* CollectifyUITests.swift */,
+				20E1A34423D48893001D6FA6 /* Info.plist */,
+			);
+			path = CollectifyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20E1A31923D48892001D6FA6 /* Collectify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20E1A34723D48893001D6FA6 /* Build configuration list for PBXNativeTarget "Collectify" */;
+			buildPhases = (
+				20E1A31623D48892001D6FA6 /* Sources */,
+				20E1A31723D48892001D6FA6 /* Frameworks */,
+				20E1A31823D48892001D6FA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Collectify;
+			productName = Collectify;
+			productReference = 20E1A31A23D48892001D6FA6 /* Collectify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20E1A33223D48893001D6FA6 /* CollectifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20E1A34A23D48893001D6FA6 /* Build configuration list for PBXNativeTarget "CollectifyTests" */;
+			buildPhases = (
+				20E1A32F23D48893001D6FA6 /* Sources */,
+				20E1A33023D48893001D6FA6 /* Frameworks */,
+				20E1A33123D48893001D6FA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20E1A33523D48893001D6FA6 /* PBXTargetDependency */,
+			);
+			name = CollectifyTests;
+			productName = CollectifyTests;
+			productReference = 20E1A33323D48893001D6FA6 /* CollectifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		20E1A33D23D48893001D6FA6 /* CollectifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20E1A34D23D48893001D6FA6 /* Build configuration list for PBXNativeTarget "CollectifyUITests" */;
+			buildPhases = (
+				20E1A33A23D48893001D6FA6 /* Sources */,
+				20E1A33B23D48893001D6FA6 /* Frameworks */,
+				20E1A33C23D48893001D6FA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20E1A34023D48893001D6FA6 /* PBXTargetDependency */,
+			);
+			name = CollectifyUITests;
+			productName = CollectifyUITests;
+			productReference = 20E1A33E23D48893001D6FA6 /* CollectifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20E1A31223D48892001D6FA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Evan Kirby McGregor";
+				TargetAttributes = {
+					20E1A31923D48892001D6FA6 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					20E1A33223D48893001D6FA6 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 20E1A31923D48892001D6FA6;
+					};
+					20E1A33D23D48893001D6FA6 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 20E1A31923D48892001D6FA6;
+					};
+				};
+			};
+			buildConfigurationList = 20E1A31523D48892001D6FA6 /* Build configuration list for PBXProject "Collectify" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20E1A31123D48892001D6FA6;
+			productRefGroup = 20E1A31B23D48892001D6FA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20E1A31923D48892001D6FA6 /* Collectify */,
+				20E1A33223D48893001D6FA6 /* CollectifyTests */,
+				20E1A33D23D48893001D6FA6 /* CollectifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20E1A31823D48892001D6FA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E1A32D23D48893001D6FA6 /* LaunchScreen.storyboard in Resources */,
+				20E1A32A23D48893001D6FA6 /* Preview Assets.xcassets in Resources */,
+				20E1A32723D48893001D6FA6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E1A33123D48893001D6FA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E1A33C23D48893001D6FA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20E1A31623D48892001D6FA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E1A32323D48892001D6FA6 /* Collectify.xcdatamodeld in Sources */,
+				20E1A35523D48E8D001D6FA6 /* RestService.swift in Sources */,
+				20E1A31E23D48892001D6FA6 /* AppDelegate.swift in Sources */,
+				20E1A35323D48C7B001D6FA6 /* LocationManager.swift in Sources */,
+				20E1A35123D48990001D6FA6 /* MapView.swift in Sources */,
+				20E1A32523D48892001D6FA6 /* ContentView.swift in Sources */,
+				20E1A32023D48892001D6FA6 /* SceneDelegate.swift in Sources */,
+				20E1A35923D4905D001D6FA6 /* EventListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E1A32F23D48893001D6FA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E1A33823D48893001D6FA6 /* CollectifyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20E1A33A23D48893001D6FA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E1A34323D48893001D6FA6 /* CollectifyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20E1A33523D48893001D6FA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20E1A31923D48892001D6FA6 /* Collectify */;
+			targetProxy = 20E1A33423D48893001D6FA6 /* PBXContainerItemProxy */;
+		};
+		20E1A34023D48893001D6FA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20E1A31923D48892001D6FA6 /* Collectify */;
+			targetProxy = 20E1A33F23D48893001D6FA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20E1A32B23D48893001D6FA6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20E1A32C23D48893001D6FA6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20E1A34523D48893001D6FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		20E1A34623D48893001D6FA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20E1A34823D48893001D6FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Collectify/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Collectify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Collectify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20E1A34923D48893001D6FA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Collectify/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Collectify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Collectify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		20E1A34B23D48893001D6FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CollectifyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CollectifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Collectify.app/Collectify";
+			};
+			name = Debug;
+		};
+		20E1A34C23D48893001D6FA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CollectifyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CollectifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Collectify.app/Collectify";
+			};
+			name = Release;
+		};
+		20E1A34E23D48893001D6FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CollectifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CollectifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Collectify;
+			};
+			name = Debug;
+		};
+		20E1A34F23D48893001D6FA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CollectifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CollectifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Collectify;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20E1A31523D48892001D6FA6 /* Build configuration list for PBXProject "Collectify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20E1A34523D48893001D6FA6 /* Debug */,
+				20E1A34623D48893001D6FA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20E1A34723D48893001D6FA6 /* Build configuration list for PBXNativeTarget "Collectify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20E1A34823D48893001D6FA6 /* Debug */,
+				20E1A34923D48893001D6FA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20E1A34A23D48893001D6FA6 /* Build configuration list for PBXNativeTarget "CollectifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20E1A34B23D48893001D6FA6 /* Debug */,
+				20E1A34C23D48893001D6FA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20E1A34D23D48893001D6FA6 /* Build configuration list for PBXNativeTarget "CollectifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20E1A34E23D48893001D6FA6 /* Debug */,
+				20E1A34F23D48893001D6FA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		20E1A32123D48892001D6FA6 /* Collectify.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				20E1A32223D48892001D6FA6 /* Collectify.xcdatamodel */,
+			);
+			currentVersion = 20E1A32223D48892001D6FA6 /* Collectify.xcdatamodel */;
+			path = Collectify.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 20E1A31223D48892001D6FA6 /* Project object */;
+}
