@@ -1,8 +1,8 @@
-# Import the SDK
 import boto3
 import botocore
 
-class S3Manager():
+
+class S3Manager:
     def __init__(self):
         self.BUCKET_NAME = 'polylog'
         self.session = boto3.Session(
@@ -13,12 +13,13 @@ class S3Manager():
         self.s3 = self.session.resource('s3')
         self.s3_client = self.session.client('s3')
 
-
-    # Download file from s3
-    # s3_key: path in s3, excluding bucket name
-    # local_file: name of the file once it's downloaded
-    # path: path of parent folder where file will be downloaded
     def download(self, s3_key, path):
+        """
+            Download file from s3
+            s3_key: path in s3, excluding bucket name
+            local_file: name of the file once it's downloaded
+            path: path of parent folder where file will be downloaded
+        """
         local_file = s3_key.split('/')[-1]
         local_file = path + "/" + local_file
         try:
@@ -59,29 +60,10 @@ class S3Manager():
             return True
         return False
 
-
-KEY =  'hackatown2020/images/example.jpg' # replace with your object key
-local = 'test.txt'
-
-s3 = S3Manager()
-s3.download(KEY, ".")
-# s3.upload(local, 'hackatown2020')
-# print(s3.listBucketObjects())
-print(s3.containsKey('hackatown2020/images/example.jpg'))
-
-
-
-# response = s3.list_buckets()
-
-# Output the bucket names
-# print('Existing buckets:')
-# for bucket in response['Buckets']:
-#     print(f'  {bucket["Name"]}')
-
-
-# object_key = 'test.txt'
 #
-# print('Uploading some data to {} with key: {}'.format(
-#     myBucket, object_key))
-# s3.put_object(Bucket=myBucket, Key=object_key, Body=b'Hello World!')
-
+# KEY = 'hackatown2020/images/example.jpg' # replace with your object key
+# local = 'test.txt'
+#
+# s3 = S3Manager()
+# s3.download(KEY, ".")
+# print(s3.containsKey('hackatown2020/images/example.jpg'))

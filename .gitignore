@@ -1,6 +1,17 @@
 # Specifies intentionally untracked files to ignore when using Git
 # http://git-scm.com/docs/gitignore
 
+
+# for mac
+*.idea
+
+# for npm
+*.node_modules
+*www
+
+# for python
+*__pycache__
+
 *~
 *.sw[mnpcod]
 .tmp
