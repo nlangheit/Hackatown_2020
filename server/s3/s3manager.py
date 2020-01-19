@@ -9,10 +9,9 @@ class S3Manager:
         self.PATH = 'hackatown/images/'
         self.OBJECT_URL = 'https://polylog.s3.amazonaws.com/'
         self.session = boto3.Session(
-            aws_access_key_id='ASIAWDSRHSOT57HQE2VR',
-            aws_secret_access_key = 'x02up9GPO9ool7Cp1QNSEoS2ILyAaYRnh/Ip6XJV',
-            aws_session_token = 'FwoGZXIvYXdzEFwaDEIBBQ8sgqMkWSPlKiLQAZd9bwPT+7lmRJcVMqlHVShBcHegvx71epnnefky4U8RNWQ+W2Brzw9bSSbeh37jXK9OQxQFfnp86HmFlJfi+YLQKGt1V7eU/3FgFFd+0bnv/3sBqMbjL4Fa5fZWWfT+6HeGshs1vVD6owPHhnmLwfmrICKy25QCTe5k6clIOYGv1cHsG6MK0aFDKlISLMyMStgQDjZFLrAXF2r/wvlp0VKrXNUhllIGMmocahzgjOqB+77DUg+S/2/tT7nPmJfR+BRLiM3CFPI3kB/s6ut2Ct8oh+2Q8QUyLWM1X47DB+0vim4pb1KMHGBAF2n1BTKQdHQkyRbJu6aWZ8sAGdH4nFSdDES7nA=='
-        )
+            aws_access_key_id='ASIAWDSRHSOTQYIZEJVF',
+            aws_secret_access_key = 'OiNAmN2vUGrryxticB4cmj5hfXfVGcJi2PpHTbaF',
+            aws_session_token = 'FwoGZXIvYXdzEGEaDAUMLDDqRki4zcND1SLQAXF4bqqn/B7cjnnmOy4OVPohQhE4dcYnaXLa26xPNbybQ3exyirRwWhzC2yngbPEnSrlBmNylQ52lqF6fqKd/lD9qvCleuT2a/Pv/aLCw0R6Re3r4BuFyY/PnF5FvbNcmrRZ/gL752B8HGUoRg5YOoVoT4jDm0L4QknnhFzBB2Bc8FpOJY2MKWF8ccyy36adAr+3oJjooioL5LcyoChww5OqQB+70zHgr41uzSs+Yy5OrrAhvtjoNcnjhHbmSnGOyI2+eW+Uk0XLhD7owb43u9sojPSR8QUyLZLr42XJZXHRP4T/06iqOjA0oFzliZ6l0YMhb4gI+XHHF31E676y8ilhdg+/Mg==')
         self.s3 = self.session.resource('s3')
         self.s3_client = self.session.client('s3')
 
